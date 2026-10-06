@@ -1,0 +1,19 @@
+{
+  "name": "turnpike-backend",
+  "version": "1.0.0",
+  "description": "一维距离多重集重建（Turnpike）教学后端：TypeScript + Node.js + SQLite",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo",
+    "cli": "node dist/src/cli.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
+
