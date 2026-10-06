@@ -1,0 +1,21 @@
+{
+  "name": "turnpike-reconstruction",
+  "version": "1.0.0",
+  "description": "一维距离多重集重建（Turnpike）API 与 CLI 后端",
+  "main": "index.js",
+  "scripts": {
+    "cli": "node dist/cli.js",
+    "test": "npm run build && node --test test/turnpike.test.mjs",
+    "start": "npm run build && node dist/server.js",
+    "demo": "npm run build && node dist/cli.js demo",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
